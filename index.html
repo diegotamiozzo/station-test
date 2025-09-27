@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento de Temperatura, Umidade, Luminosidade e Chuva</title> <!-- Título atualizado -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2f2f2f">
+    <link rel="icon" href="projeto/icon-192.png" sizes="192x192">
+</head>
+<body>
+    <div class="container">
+        <h1>Monitoramento Ambiental</h1> <!-- Título mais genérico -->
+
+        <!-- Exibir a data atual -->
+        <p id="current-date"></p>
+
+        <!-- Cards de Temperatura e Umidade -->
+        <div class="card">
+            <h2>Temperatura</h2>
+            <p><strong>Atual:</strong> <span id="temperature">Carregando...</span></p>
+            <p id="max-temperature">Máxima: -- °C</p>
+            <p id="min-temperature">Mínima: -- °C</p>
+        </div>
+
+        <div class="card">
+            <h2>Umidade</h2>
+            <p><strong>Atual:</strong> <span id="humidity">Carregando...</span></p>
+            <p id="max-humidity">Máxima: -- %</p>
+            <p id="min-humidity">Mínima: -- %</p>
+        </div>
+
+        <!-- NOVO CARD: Luminosidade -->
+        <div class="card">
+            <h2>Luminosidade</h2>
+            <p><strong>Valor Atual:</strong> <span id="luminosity">Carregando...</span></p>
+            <p><small>(0-4095, maior valor = mais escuro)</small></p>
+        </div>
+
+        <!-- NOVO CARD: Chuva -->
+        <div class="card">
+            <h2>Chuva</h2>
+            <p><strong>Status Atual:</strong> <span id="rain">Carregando...</span></p>
+            <p><small>(0 = Sem Chuva, 1 = Com Chuva)</small></p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>Desenvolvido por Diego Tamiozzo</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+    "name": "Clima Local",
+    "short_name": "Clima",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#2f2f2f",
+    "theme_color": "#2f2f2f",
+    "orientation": "portrait",
+    "icons": [
+      {
+        "src": "projeto/icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "projeto/icon-512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
