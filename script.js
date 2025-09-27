@@ -1,5 +1,5 @@
-const channelId = '2863670'; // Substitua com o seu Channel ID
-const readApiKey = 'JJ56RSIGKO5R0NQ5'; // Substitua com o seu Read API Key
+const channelId = 'SEU_CHANNEL_ID'; // Substitua com o seu Channel ID
+const readApiKey = 'SUA_READ_API_KEY'; // Substitua com o seu Read API Key
 
 function fetchDailyData() {
     const today = new Date();
