@@ -1,6 +1,6 @@
-# Sistema de Monitoramento Ambiental ESP32 + ThingSpeak
+# Sistema de Monitoramento com ESP32 + ThingSpeak
 
-Um sistema completo de monitoramento ambiental utilizando ESP32 para coleta de dados de temperatura, umidade, luminosidade e detecção de chuva, com visualização web via ThingSpeak API.
+Um sistema de monitoramento ambiental utilizando ESP32 para coleta de dados de temperatura, umidade, luminosidade e detecção de chuva, com visualização web via ThingSpeak API.
 
 ## 📋 Características
 
@@ -62,15 +62,16 @@ projeto/
 
 ### 2. Configurar o ESP32
 
-No arquivo `dados-thingspeak.ino`, configure:
+Crie um arquivo `config.h` dentro da pasta `esp32/` (ele será ignorado pelo Git) com o seguinte conteúdo:
 
 ```cpp
+// esp32/config.h
 // Wi-Fi
-const char* ssid = "SUA_REDE";
-const char* password = "SUA_SENHA";
-
+#define WIFI_SSID "SUA_REDE"
+#define WIFI_PASS "SUA_SENHA"
+#
 // ThingSpeak
-String apiKey = "SUA_WRITE_API_KEY";
+#define API_KEY "SUA_WRITE_API_KEY"
 ```
 
 ### 3. Configurar a Interface Web

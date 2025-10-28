@@ -1,5 +1,6 @@
-const channelId = 'SEU_CHANNEL_ID'; // Substitua com o seu Channel ID
-const readApiKey = 'SUA_READ_API_KEY'; // Substitua com o seu Read API Key
+// As configurações foram movidas para config.js (que não é versionado)
+const channelId = config.channelId;
+const readApiKey = config.readApiKey;
 
 function fetchDailyData() {
     const today = new Date();
